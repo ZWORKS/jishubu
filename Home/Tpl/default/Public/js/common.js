@@ -1,4 +1,4 @@
-/*启点在线企业网站管理系统PHP版
+/*技术部PHP版
 http://www.kelvinvt.com*/
 
 $(document).ready(function(){
