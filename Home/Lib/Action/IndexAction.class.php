@@ -1,5 +1,4 @@
 <?php
-include('ListAction.php')
 class IndexAction extends CommonAction{
     public function index(){
     	if ($this->lang) {
