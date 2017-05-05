@@ -1,3 +1,3 @@
 <?php
-//000000086400a:1:{s:5:"flash";a:3:{i:0;a:5:{s:2:"id";s:1:"1";s:5:"title";s:9:"广告一";s:4:"sort";s:1:"1";s:4:"link";s:24:"http://www.kelvinvt.com/";s:5:"photo";s:17:"57ca437eb1826.png";}i:1;a:5:{s:2:"id";s:1:"2";s:5:"title";s:9:"广告一";s:4:"sort";s:1:"2";s:4:"link";s:24:"http://www.kelvinvt.com/";s:5:"photo";s:17:"57c4fa55deec2.png";}i:2;a:5:{s:2:"id";s:1:"3";s:5:"title";s:9:"广告二";s:4:"sort";s:1:"3";s:4:"link";s:24:"http://www.kelvinvt.com/";s:5:"photo";s:17:"57c4fa620d3e3.png";}}}
+//000000086400a:1:{s:5:"flash";N;}
 ?>

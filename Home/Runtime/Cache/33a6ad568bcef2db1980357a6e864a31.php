@@ -71,7 +71,7 @@
                 <div class="about_box">
                     <h1 class="about_h1">公司简介</h1><span class="about_span">ABOUT US</span>
                     <section>
-                        <img align="left" src="../Public/images/about.png" alt="公司简介">
+                        <!--<img align="left" src="../Public/images/about.png" alt="公司简介">-->
                         <?php echo W('About',array('id'=>25,'len'=>350,'lang'=>'c'));?>
                         <a href="<?php echo W('Listhref',array('id'=>25,'lang'=>'c'));?>" class="about_more">了解我们更多&gt;&gt;</a>
                     <section>

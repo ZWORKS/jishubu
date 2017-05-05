@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo (C("seo_etitle")); ?></title>
-    <meta name="keywords" content="<?php echo (C("seo_ekeywords")); ?>" />
-    <meta name="description" content="<?php echo (C("seo_edescription")); ?>" />
+    <title><?php echo (C("seo_title")); ?></title>
+    <meta name="keywords" content="<?php echo (C("seo_keywords")); ?>" />
+    <meta name="description" content="<?php echo (C("seo_description")); ?>" />
     <meta name="applicable-device"content="pc,mobile">
 <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet">
 <link href="../Public/css/bxslider.css" rel="stylesheet">
@@ -27,22 +27,22 @@
 <div class="container">
   <div class="row">
 
-    <div class="top_menu"> 
-        <a href="<?php echo W('Index',array('cnen'=>'cn','lang'=>'c'));?>" title="Chinese"><img src="../Public/images/Chinese.png" alt="Chinese"></a>
+    <div class="top_menu">
+        <a href="<?php echo W('Index',array('cnen'=>'cn','lang'=>'c'));?>" title="中文版"><img src="../Public/images/Chinese.png" alt="中文版"></a>
         <img src="../Public/images/topline.gif" alt="line">
-        <a href="<?php echo W('Index',array('cnen'=>'en','lang'=>'e'));?>" title="English"><img src="../Public/images/English.png" alt="English"></a>
+        <a href="<?php echo W('Index',array('cnen'=>'en','lang'=>'e'));?>" title="English"><img src="../Public/images/English.png" alt="英文版"></a>
     </div>
 
     <div class="col-xs-12 col-sm-9 col-md-9">
-        <a href="<?php echo (C("web_url")); ?>"><img src="__ROOT__/Uploads/<?php echo (C("web_logo")); ?>" class="logo" alt="<?php echo (C("web_ename")); ?>"/></a>
+        <a href="<?php echo (C("web_url")); ?>"><img src="__ROOT__/Uploads/<?php echo (C("web_logo")); ?>" class="logo" alt="<?php echo (C("web_name")); ?>"/></a>
     </div>
 
     <div id="topsearch" class="col-xs-12 col-sm-3 col-md-3">
-        <form id="searchform" method="get" action="<?php echo U('Search/index',array('g'=>'e'));?>">
+        <form id="searchform" method="get" action="<?php echo U('Search/index',array('g'=>'c'));?>">
             <div class="input-group search_group">
-                <input type="text" name="name" class="form-control input-sm" placeholder="Product search">
+                <input type="text" name="name" class="form-control input-sm" placeholder="产品搜索">
                    <span class="input-group-btn">
-                      <a href="javascript:searchform.submit();" class="btn btn-sm mysearch_btn" type="button">Search</a>
+                      <a href="javascript:searchform.submit();" class="btn btn-sm mysearch_btn" type="button">搜 索</a>
                   </span>
             </div>
         </form>
@@ -51,7 +51,7 @@
   </div>
 </div>
   
-<?php echo W('Nav',array('lang'=>'e'));?>
+<?php echo W('Nav',array('lang'=>'c'));?>
 
 <?php echo W('Flash');?>
 <script type="text/javascript">
@@ -69,11 +69,11 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="about_box">
-                    <h1 class="about_h1">ABOUT US</h1>
+                    <h1 class="about_h1">ABOUT US</h1><span class="about_span">ABOUT US</span>
                     <section>
-                        <img align="left" src="../Public/images/about.png" alt="ABOUT US">
-                        <?php echo W('About',array('id'=>25,'len'=>700,'lang'=>'e'));?>
-                        <a href="<?php echo W('Listhref',array('id'=>25,'lang'=>'e'));?>" class="about_more"> VIEW DETAILS </a>
+                        <!--<img align="left" src="../Public/images/about.png" alt="公司简介">-->
+                        <?php echo W('About',array('id'=>25,'len'=>350,'lang'=>'e'));?>
+                        <a href="<?php echo W('Listhref',array('id'=>25,'lang'=>'e'));?>" class="about_more">了解我们更多&gt;&gt;</a>
                     <section>
                 </div>
             </div>
@@ -84,14 +84,14 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="index_product">
-                    <h1 class="about_h1">PRODUCT DISPLAY</h1>
+                    <h1 class="about_h1">PRODUCT DISPLAY</h1><span class="about_span">PRODUCT DISPLAY</span>
                         <div class="product_list">
                         <?php echo W('List',array('table'=>'Product','bid'=>1,'id'=>1,'lang'=>'e'));?>
                         </div>
                 </div>
 
                     <div class="left_nav index_left_nav" id="categories">
-                        <h1 class="left_h1">CATEGORIES</h1>
+                        <h1 class="left_h1">导航栏目</h1>
                          <?php echo W('Left',array('id'=>1,'type'=>'product','lang'=>'e'));?>
                     </div>
             </div>
@@ -103,19 +103,19 @@
 
             <div class="col-xs-12 col-sm-8 col-md-7">
                 <div class="news_box">
-                    <h1 class="about_h1">NEWS CENTER</h1>
+                    <h1 class="about_h1">新闻中心</h1><span class="about_span">NEWS CENTER</span>
                     <?php echo W('List',array('table'=>'New','bid'=>2,'id'=>2,'lang'=>'e'));?>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-4 col-md-5">    
                 <div class="index_contact">
-<h1 class="about_h1">CONTACT US</h1>
-    <p style="padding-top:25px;">Contact: <?php echo (C("web_econtacts")); ?></p>
-    <p>Phone: <?php echo (C("web_phone")); ?></p>
-    <p>Tel: <?php echo (C("web_tel")); ?></p>
-    <p>Email: <?php echo (C("web_email")); ?></p>
-    <p>Add: <?php echo (C("web_eadd")); ?></p>
+<h1 class="about_h1">联系我们</h1><span class="about_span">CONTACT US</span>
+    <p style="padding-top:20px;">联系人：<?php echo (C("web_contacts")); ?></p>
+    <p>手机：<?php echo (C("web_phone")); ?></p>
+    <p>电话：<?php echo (C("web_tel")); ?></p>
+    <p>邮箱：<?php echo (C("web_email")); ?></p>
+    <p>地址： <?php echo (C("web_add")); ?></p>
 </div>
                 <?php echo W('Link',array('lang'=>'e'));?>
                 <?php echo W('Tags',array('lang'=>'e'));?>
@@ -128,20 +128,20 @@
     <div class="foot_nav btn-group dropup">
         <a class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
             <span class="glyphicon glyphicon-share btn-lg" aria-hidden="true"></span>
-            Share</a>  
-            <div class="dropdown-menu ewebshare">
-            <?php echo (C("web_eshare")); ?>
+            分享</a>  
+            <div class="dropdown-menu webshare">
+            <?php echo (C("web_share")); ?>
             </div>
     </div>
-    <div class="foot_nav"><a href="tel:<?php echo (C("web_phone")); ?>"><span class="glyphicon glyphicon-phone btn-lg" aria-hidden="true"></span>Call</a></div>
-    <div class="foot_nav"><a id="gotocate" href="#"><span class="glyphicon glyphicon-th-list btn-lg" aria-hidden="true"></span>Menu</a></div>
-    <div class="foot_nav"><a id="gototop" href="#"><span class="glyphicon glyphicon-circle-arrow-up btn-lg" aria-hidden="true"></span>Top</a></div>
+    <div class="foot_nav"><a href="tel:<?php echo (C("web_phone")); ?>"><span class="glyphicon glyphicon-phone btn-lg" aria-hidden="true"></span>手机</a></div>
+    <div class="foot_nav"><a id="gotocate" href="#"><span class="glyphicon glyphicon-th-list btn-lg" aria-hidden="true"></span>分类</a></div>
+    <div class="foot_nav"><a id="gototop" href="#"><span class="glyphicon glyphicon-circle-arrow-up btn-lg" aria-hidden="true"></span>顶部</a></div>
 </nav>
 
 <footer>
     <div class="copyright">
-        <p><?php echo (C("web_ecopyright")); ?>&nbsp;<?php echo (C("web_icp")); ?> <a href="__ROOT__/e_sitemap.html" target="_blank">Sitemap</a></p>
-        <p class="copyright_p">Add: <?php echo (C("web_eadd")); ?> &nbsp;Tel: <?php echo (C("web_tel")); ?> &nbsp;Fax: <?php echo (C("web_fax")); ?>&nbsp;<?php echo (C("web_count")); ?></p>
+        <p><?php echo (C("web_copyright")); ?>&nbsp;<?php echo (C("web_icp")); ?> <a href="__ROOT__/c_sitemap.html" target="_blank">网站地图</a></p>
+        <p class="copyright_p">地址：<?php echo (C("web_add")); ?> &nbsp;电话：<?php echo (C("web_tel")); ?> &nbsp;传真：<?php echo (C("web_fax")); ?>&nbsp;<?php echo (C("web_count")); ?></p>
     </div>
     <?php if(C("is_translate")!= 0): ?><div id="translate">
     <!-- Begin TranslateThis Button -->
@@ -154,9 +154,7 @@
 </div><?php endif; ?> 
 </footer>
 
-<?php echo W('Online',array('lang'=>'e'));?>
-
-
+<?php echo W('Online',array('lang'=>'c'));?>
 
   </body>
 </html>
