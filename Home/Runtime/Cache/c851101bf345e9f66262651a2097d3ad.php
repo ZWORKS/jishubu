@@ -47,10 +47,10 @@
 <div class="container">
   <div class="row">
 
-    <div class="top_menu">语言选择：
-        <a href="<?php echo W('Index',array('cnen'=>'cn','lang'=>'c'));?>" title="中文版"><img src="../Public/images/Chinese.gif" alt="中文版"></a>
+    <div class="top_menu">
+        <a href="<?php echo W('Index',array('cnen'=>'cn','lang'=>'c'));?>" title="中文版"><img src="../Public/images/Chinese.png" alt="中文版"></a>
         <img src="../Public/images/topline.gif" alt="line">
-        <a href="<?php echo W('Index',array('cnen'=>'en','lang'=>'e'));?>" title="English"><img src="../Public/images/English.gif" alt="英文版"></a>
+        <a href="<?php echo W('Index',array('cnen'=>'en','lang'=>'e'));?>" title="English"><img src="../Public/images/English.png" alt="英文版"></a>
     </div>
 
     <div class="col-xs-12 col-sm-9 col-md-9">
