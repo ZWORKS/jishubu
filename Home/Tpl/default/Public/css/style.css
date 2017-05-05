@@ -79,7 +79,7 @@ a.about_more:hover{color: #fff; background-color: #1C8CBD; text-decoration: none
 .list_box{clear: both; padding:10px 0px 0px 0px;}
 .path_title{border: 1px solid #f2f2f2;padding: 8px 19px;overflow: hidden;}
 
-/*栏目导航*/
+/*分类*/
 .left_nav{ clear: both; padding-top: 10px;}
 .index_left_nav{padding-top: 0px;}
 .left_h1{background:url(../images/title_line.jpg) left bottom no-repeat; font-size: 22px; display: block; margin-top: 25px; padding: 0px 0px 10px 0px;}
