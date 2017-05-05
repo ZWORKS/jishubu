@@ -1,0 +1,41 @@
+<header>
+
+<div class="container">
+  <div class="row">
+
+    <div class="top_menu">
+        <a href="<{:W('Index',array('cnen'=>'cn','lang'=>'c'))}>" title="中文版"><img src="../Public/images/Chinese.png" alt="中文版"></a>
+        <img src="../Public/images/topline.gif" alt="line">
+        <a href="<{:W('Index',array('cnen'=>'en','lang'=>'e'))}>" title="English"><img src="../Public/images/English.png" alt="英文版"></a>
+    </div>
+
+    <div class="col-xs-12 col-sm-9 col-md-9">
+        <a href="<{$Think.config.web_url}>"><img src="__ROOT__/Uploads/<{$Think.config.web_logo}>" class="logo" alt="<{$Think.config.web_name}>"/></a>
+    </div>
+
+    <div id="topsearch" class="col-xs-12 col-sm-3 col-md-3">
+        <form id="searchform" method="get" action="<{:U('Search/index',array('g'=>'c'))}>">
+            <div class="input-group search_group">
+                <input type="text" name="name" class="form-control input-sm" placeholder="产品搜索">
+                   <span class="input-group-btn">
+                      <a href="javascript:searchform.submit();" class="btn btn-sm mysearch_btn" type="button">搜 索</a>
+                  </span>
+            </div>
+        </form>
+    </div>
+
+  </div>
+</div>
+  
+<{:W('Nav',array('lang'=>'c'))}>
+
+<{:W('Flash')}>
+<script type="text/javascript">
+    $('.bxslider').bxSlider({
+      adaptiveHeight: true,
+      infiniteLoop: true,
+      hideControlOnEnd: true,
+      auto:true
+    });
+</script>
+</header>

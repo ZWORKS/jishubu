@@ -1,0 +1,30 @@
+// +----------------------------------------------------------------------
+// | 启点在线企业网站管理系统PHP版
+// +----------------------------------------------------------------------
+// | Copyright (c) 2010-2016 http://kelvinvt.com All rights reserved.
+// +----------------------------------------------------------------------
+// | Sale ( http://www.kelvinvt.com/ )
+// +----------------------------------------------------------------------
+// | Design: kelvinvt <kelvinvt@qq.com>
+// +----------------------------------------------------------------------
+
+KindEditor.plugin('clearhtml', function(K) {
+	var self = this, name = 'clearhtml';
+	self.clickToolbar(name, function() {
+		self.focus();
+		var html = self.html();
+		html = html.replace(/(<script[^>]*>)([\s\S]*?)(<\/script>)/ig, '');
+		html = html.replace(/(<style[^>]*>)([\s\S]*?)(<\/style>)/ig, '');
+		html = K.formatHtml(html, {
+			a : ['href', 'target'],
+			embed : ['src', 'width', 'height', 'type', 'loop', 'autostart', 'quality', '.width', '.height', 'align', 'allowscriptaccess'],
+			img : ['src', 'width', 'height', 'border', 'alt', 'title', '.width', '.height'],
+			table : ['border'],
+			'td,th' : ['rowspan', 'colspan'],
+			'div,hr,br,tbody,tr,p,ol,ul,li,blockquote,h1,h2,h3,h4,h5,h6' : []
+		});
+		self.html(html);
+		self.cmd.selection(true);
+		self.addBookmark();
+	});
+});
