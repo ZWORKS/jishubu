@@ -86,8 +86,11 @@ function CheckJob()
     <td>产品分类:</td>
     <td height="35">
       <select name="pid" style="height:28px;">
-      <volist name='list' id='vo'>
+      <!--<volist name='list' id='vo'>
           <option value="<{$vo.id}>"></option>
+      </volist>-->
+      <volist name='list' id='vo'>
+          <option value="<{$vo.id}>" <eq name="vo.id" value="$product.pid">selected="selected"</eq>><{$vo.html}><if condition='$vo.level gt 0'>┕</if><{$vo.name}></option>
       </volist>
       </select>
     </td>
