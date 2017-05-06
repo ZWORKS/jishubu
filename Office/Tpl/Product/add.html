@@ -15,11 +15,11 @@ function CheckJob()
 		document.myform.name.focus();
 		return false;
 	}
-      if (document.myform.ename.value.length==""){
-        alert ("英文产品名称不能为空！");
-        document.myform.ename.focus();
-        return false;
-      }
+      // if (document.myform.ename.value.length==""){
+      //   alert ("英文产品名称不能为空！");
+      //   document.myform.ename.focus();
+      //   return false;
+      // }
 	if (document.myform.title.value.length==""){
 		alert ("SEO标题不能为空！");
 		document.myform.title.focus();
@@ -47,13 +47,13 @@ function CheckJob()
         <TR>
 
           <TD width="85" align="center" class="Move" id="setting1">
-            <A onClick="javascript:settingselect('1')" href="javascript:void(0);">中文信息</A>
+            <A onClick="javascript:settingselect('1')" href="javascript:void(0);">添加产品</A>
           </TD>
           <TD width="5" align="center"><IMG src="../Public/images/tiao.gif"></TD>
 
-          <TD width="85" align="center" class="Out" id="setting2">
+          <!--<TD width="85" align="center" class="Out" id="setting2">
             <A onClick="javascript:settingselect('2')" href="javascript:void(0);">英文信息</A>
-          </TD>
+          </TD>-->
           <TD align="left" class="LineRight" style="padding-left: 10px;"></TD>
         </TR>
 
@@ -86,12 +86,12 @@ function CheckJob()
     <td>产品分类:</td>
     <td height="35">
       <select name="pid" style="height:28px;">
-      <volist name='list' id='vo'>
-          <option value="<{$vo.id}>"></option>
-      </volist>
       <!--<volist name='list' id='vo'>
-          <option value="<{$vo.id}>" <eq name="vo.id" value="$product.pid">selected="selected"</eq>><{$vo.html}><if condition='$vo.level gt 0'>┕</if><{$vo.name}></option>
+          <option value="<{$vo.id}>"></option>
       </volist>-->
+      <volist name='list' id='vo'>
+          <option value="<{$vo.id}>" <eq name="vo.id" value="$product.pid">selected="selected"</eq>><{$vo.html}><if condition='$vo.level gt 0'>┕</if><{$vo.name}></option>
+      </volist>
       </select>
     </td>
   </tr>
@@ -121,10 +121,10 @@ function CheckJob()
     </td>
   </tr>
 
-  <tr>
+  <!--<tr>
     <td>URL优化：</td>
     <td height="35"><input name="url" type="text" class="FormSmall" style="width: 320px;"> <a title='URL只能是字母，数字，下划线或-'style="margin-left: 5px;" href="#"><img src="../Public/images/help.gif"></a></td>
-  </tr>
+  </tr>-->
   
   <tr>
     <td width="10%">SEO标题：</td>
@@ -133,16 +133,16 @@ function CheckJob()
     </td>
   </tr>
   
-  <tr>
+  <!--<tr>
     <td>SEO关键字：</td>
     <td height="35"><input name="keywords" type="text" class="FormSmall" style="width: 320px;"></td>
-  </tr>
+  </tr>-->
   
-  <tr>
+  <!--<tr>
     <td>SEO描述：</td>
     <td height="110"><textarea name="description" class="FormSmall" style="width: 450px; height: 80px;"></textarea>
     </td>
-  </tr>
+  </tr>-->
   
   <tr>
     <td>缩略图：</td>
@@ -190,7 +190,7 @@ function CheckJob()
 </DIV>
 
 
-<DIV class="close" id="settingBox2">
+<!--<DIV class="close" id="settingBox2">
 <DIV class="PageContent">
 <table width="98%" border="0" style="margin:20px;" class="ListCategory">
   <tr>
@@ -235,7 +235,7 @@ function CheckJob()
   </tr>
   </table>
 </DIV>
-</DIV>
+</DIV>-->
 
 <div style="float:left; margin:-10px 0px 20px 135px;">
     <input type="submit" value="提交" class="bginput">&nbsp;&nbsp;
