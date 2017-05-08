@@ -29,7 +29,7 @@ ul{list-style:none;}
 .img-thumbnail:hover,.opacity_img:hover{opacity: 0.8;}
 
 /*导航菜单*/
-.navbar{ margin:0px; background-color:#0f6bb1; border: none;}
+.navbar{ margin:0px; background-color:#0c5ea8; border: none;}
 #app_menudown{position: absolute; top:0px; right:0px; font-size: 16px;}
 #app_menudown:hover{background-color: #49b5e4;}
 
