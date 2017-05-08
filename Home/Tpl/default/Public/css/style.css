@@ -84,7 +84,7 @@ a.about_more:hover{color: #fff; background-color: #0D65AD; text-decoration: none
 .index_left_nav{padding-top: 0px;}
 .left_h1{background:url(../images/title_line.jpg) left bottom no-repeat; font-size: 22px; display: block; margin-top: 25px; padding: 0px 0px 10px 0px;}
 .left_nav_ul{list-style:none;margin:0px;padding:0px; margin:15px 0px 0px 0px;padding-bottom: 10px;}
-.left_nav_ul > li{position:relative;padding:8px 0px 8px 18px;width:105px;float:left;}
+.left_nav_ul > li{position:relative;padding:8px 0px 8px 18px;font-size:15px;line-height:21px;width:105px;float:left;}
 .left_nav_ul > li > a{text-decoration:none; color:#656464;}
 .left_nav_ul > li > a:hover,.left_nav_ul li a.left_active{color:#0D65AD;}
 /*小类*/
