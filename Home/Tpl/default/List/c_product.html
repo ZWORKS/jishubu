@@ -11,22 +11,21 @@
   </head>
   <body>
   
-<!--<include file='Public:c_head'/>
-   <div class="container">    
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="about_box">
-                    <h1 class="about_h1">流程展示</h1><span class="about_span">ABOUT US</span>
-                    <section>
-                        <!--<img align="left" src="../Public/images/about.png" alt="公司简介">-->
-                        <{:W('About',array('id'=>25,'len'=>6050,'lang'=>'c'))}>
-                        <a href="<{:W('Listhref',array('id'=>25,'lang'=>'c'))}>" class="about_more">了解我们更多&gt;&gt;</a>
-                    <section>
+<include file='Public:c_head'/>
+
+               <div class="col-xs-12 col-sm-12 col-md-12">
+            
+                <div class="left_nav" id="categories">
+                  <h1 class="left_h1">分类</h1>
+                  <{:W('Left',array('id'=>$list['bid'],'type'=>$list['type'],'lang'=>'c'))}>
                 </div>
+
+                <!--<div class="left_news">
+                  <h1 class="left_h1">新闻中心</h1>
+                  <{:W('List',array('table'=>'New','bid'=>2,'id'=>2,'lang'=>'c'))}>
+                </div>-->
+               <!--<include file='Public:c_contact'/>-->
             </div>
-        </div>
-    </div>-->
-   
     <!-- main -->
     <div class="container">    
         <div class="row">
@@ -56,19 +55,7 @@
 
 
             <!-- left -->
-            <div class="col-xs-12 col-sm-4 col-md-3">
-            
-                <div class="left_nav" id="categories">
-                  <h1 class="left_h1">分类</h1>
-                  <{:W('Left',array('id'=>$list['bid'],'type'=>$list['type'],'lang'=>'c'))}>
-                </div>
 
-                <!--<div class="left_news">
-                  <h1 class="left_h1">新闻中心</h1>
-                  <{:W('List',array('table'=>'New','bid'=>2,'id'=>2,'lang'=>'c'))}>
-                </div>-->
-               <!--<include file='Public:c_contact'/>-->
-            </div>
 
         </div>
     </div> 
