@@ -19,6 +19,10 @@
 
             <!-- right -->
            <div class="col-xs-12 col-sm-12 col-md-12">
+             <div class="left_nav" id="categories">
+                  <!--<h2 class="left_h1">分类</h2>-->
+                  <{:W('Left',array('id'=>$list['bid'],'type'=>$list['type'],'lang'=>'c'))}>
+                </div>
                 <div class="list_box"> 
                   <h2 class="left_h1"><{$list.name}></h2>
 
@@ -40,21 +44,6 @@
                 </div>
             </div>
 
-
-            <!-- left -->
-            <div class="col-xs-12 col-sm-4 col-md-3">
-            
-                <div class="left_nav" id="categories">
-                  <!--<h1 class="left_h1">分类</h1>-->
-                  <{:W('Left',array('id'=>$list['bid'],'type'=>$list['type'],'lang'=>'c'))}>
-                </div>
-
-                <!--<div class="left_news">
-                  <h1 class="left_h1">新闻中心</h1>
-                  <{:W('List',array('table'=>'New','bid'=>2,'id'=>2,'lang'=>'c'))}>
-                </div>-->
-               <!--<include file='Public:c_contact'/>-->
-            </div>
 
         </div>
     </div> 
